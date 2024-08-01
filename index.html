@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>General Knowledge Quiz</h1>
+            <div class="timer">Time Left: <span id="time-left">10:00</span></div>
+            <div class="progress">Question <span id="current-question">1</span> of <span id="total-questions">10</span></div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="question-container">
+            <!-- Questions will be injected here by JavaScript -->
+        </div>
+        <div class="navigation">
+            <button id="prev-btn">Previous</button>
+            <button id="skip-btn">Skip</button>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+    <footer>
+        <button id="submit-btn">Submit</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

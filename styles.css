@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #2e7d32 3px solid;
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 24px;
+}
+
+.timer, .progress {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.question {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+}
+
+.options li {
+    margin: 10px 0;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+
+.navigation {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background: #4CAF50;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.navigation button:hover {
+    background: #388E3C;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background: #4CAF50;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+footer button:hover {
+    background: #388E3C;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .timer, .progress {
+        font-size: 16px;
+    }
+
+    .navigation button, footer button {
+        padding: 8px 16px;
+        margin: 5px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    .timer, .progress {
+        font-size: 14px;
+    }
+
+    .navigation button, footer button {
+        padding: 6px 12px;
+        margin: 3px;
+        font-size: 12px;
+    }
+}
